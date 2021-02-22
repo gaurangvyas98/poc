@@ -10,14 +10,14 @@ const PORT = process.env.PORT || 8080; // Step 1
 const routes = require('./routes/api');
 
 // Step 2
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/mern_youtube', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-});
+// mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/mern_youtube', {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true
+// });
 
-mongoose.connection.on('connected', () => {
-    console.log('Mongoose is connected!!!!');
-});
+// mongoose.connection.on('connected', () => {
+//     console.log('Mongoose is connected!!!!');
+// });
 
 // Data parsing
 app.use(express.json());
